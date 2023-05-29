@@ -1,0 +1,16 @@
+.comm-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2vmin;
+    padding: 2vmin;
+    margin-left: 10vmin;
+    box-shadow: 0px 0px 5px rgb(0, 64, 255);
+    width: 90%;
+}
+.postCHead{
+    font-size: larger;
+    text-decoration: underline;
+
+}
