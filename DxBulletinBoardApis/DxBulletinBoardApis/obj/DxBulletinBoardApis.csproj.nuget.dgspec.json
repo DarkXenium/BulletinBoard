@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Avinash Kumar\\source\\repos\\DxBulletinBoardApis\\DxBulletinBoardApis\\DxBulletinBoardApis.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Avinash Kumar\\source\\repos\\DxBulletinBoardApis\\DxBulletinBoardApis\\DxBulletinBoardApis.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Avinash Kumar\\source\\repos\\DxBulletinBoardApis\\DxBulletinBoardApis\\DxBulletinBoardApis.csproj",
+        "projectName": "DxBulletinBoardApis",
+        "projectPath": "C:\\Users\\Avinash Kumar\\source\\repos\\DxBulletinBoardApis\\DxBulletinBoardApis\\DxBulletinBoardApis.csproj",
+        "packagesPath": "C:\\Users\\Avinash Kumar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Avinash Kumar\\source\\repos\\DxBulletinBoardApis\\DxBulletinBoardApis\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Avinash Kumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cpaperless.pkgs.visualstudio.com/_packaging/SafeSendReturns.Components.Core/nuget/v3/index.json": {},
+          "https://cpaperless.pkgs.visualstudio.com/_packaging/cPaperless.Components.Core/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper.Contrib": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
