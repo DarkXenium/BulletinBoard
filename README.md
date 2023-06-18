@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Bulletin Board
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the source code and necessary files for the Bulletin Board application. The application consists of a React front-end and C# backend APIs. The database content is stored in a SQL Server database.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before running the Bulletin Board application, please make sure you have the following installed:
 
-### `npm start`
+- Node.js (version 12 or higher)
+- Visual Studio or Visual Studio Code (for running the backend APIs)
+- SQL Server Management Studio (SSMS) or a similar tool (for managing the database)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To set up the Bulletin Board application, follow these steps:
 
-### `npm test`
+1. Clone the repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/DarkXenium/BulletinBoard.git
 
-### `npm run build`
+2. Install the dependencies for the React front-end:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Open the backend solution file which is in DxBulletinBoardApis folder (`DxBulletinBoardApis.sln`) in Visual Studio or Visual Studio Code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Configure the connection string for the database:
 
-### `npm run eject`
+- Open the `appsettings.json` file located in the `BulletinBoard/backend/BulletinBoard.Api` directory.
+- Update the `DefaultConnection` string to match your SQL Server instance and database.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Restore the database using the provided `db.bak` file:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Open SQL Server Management Studio (SSMS) or a similar tool.
+- Connect to your SQL Server instance.
+- Right-click on the "Databases" node and choose "Restore Database".
+- Select the `bulletinBoardPostsdb.bak` file from the repository and restore it to your desired database.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Running the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To run the Bulletin Board application, follow these steps:
 
-## Learn More
+1. Start the React front-end:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+This will start the development server and launch the application in your default browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Start the backend APIs:
 
-### Analyzing the Bundle Size
+- Build and run the backend solution in Visual Studio or Visual Studio Code.
+- The APIs will be hosted on `http://localhost:5000` by default.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Access the application:
 
-### Making a Progressive Web App
+Open your browser and navigate to `http://localhost:3000` to use the Bulletin Board application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+If you would like to contribute to the Bulletin Board application, please follow the guidelines below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Fork the repository and clone it to your local machine.
 
-### Deployment
+2. Create a new branch for your feature or bug fix:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+git checkout -b my-feature
 
-### `npm run build` fails to minify
+3. Make the necessary changes and commit them:
+   
+git commit -m "Add my feature"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Push your changes to your forked repository:
+
+git push origin my-feature
+
+5. Open a pull request on the main repository, describing your changes and why they should be merged.
+
+6. Wait for the maintainers to review your pull request and provide feedback.
+
+7. Once approved, your changes will be merged into the main repository.
+
